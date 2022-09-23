@@ -24,7 +24,7 @@ SECRET_KEY = 'l8bg1rw8=ro51nr+-gy15j6t#_7a$-hn*nmmb9x__mtz7%gjha'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['qafarragut.azurewebsites.net']
+ALLOWED_HOSTS = ['djangobiml.azurewebsites.net']
 # ALLOWED_HOSTS = []
 
 # Application definition
