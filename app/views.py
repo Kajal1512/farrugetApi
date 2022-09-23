@@ -1819,16 +1819,16 @@ def MLModel(countyName):
     print("Line number 1819")
     outputforReport = outWithQuarters
 
-    print("Line number 1822")
-    outputforReport['forecast_lower'] = outputforReport['forecast_lower'].fillna(0).astype(np.int64, errors='ignore')
-    print("Line number 1824")
-    outputforReport['forecast_upper'] = outputforReport['forecast_upper'].fillna(0).astype(np.int64, errors='ignore')
-    print("Line number 1826")
-    outputforReport['forecast_upper'] = outputforReport['forecast_upper'].replace(0, None)
-    print("Line number 1828")
-    outputforReport['forecast_lower'] = outputforReport['forecast_lower'].replace(0, None)
-    print("Line number 1830")
-    outputforReport.rename(columns={'NUMBER_OF_SALES': 'SALE_PRICE'}, inplace=True)
+#     print("Line number 1822")
+#     outputforReport['forecast_lower'] = outputforReport['forecast_lower'].fillna(0).astype(np.int64, errors='ignore')
+#     print("Line number 1824")
+#     outputforReport['forecast_upper'] = outputforReport['forecast_upper'].fillna(0).astype(np.int64, errors='ignore')
+#     print("Line number 1826")
+#     outputforReport['forecast_upper'] = outputforReport['forecast_upper'].replace(0, None)
+#     print("Line number 1828")
+#     outputforReport['forecast_lower'] = outputforReport['forecast_lower'].replace(0, None)
+#     print("Line number 1830")
+#     outputforReport.rename(columns={'NUMBER_OF_SALES': 'SALE_PRICE'}, inplace=True)
     print("Line number 1832")
     dataReport = outputforReport.to_dict(orient='records')
 
@@ -2025,7 +2025,7 @@ def MLModel(countyName):
     # In[65]:
 
     dataset_id = dataset.json()["id"]
-    obj = {"rows": final}
+    obj = {"rows": dataReport}
     print(obj)
 
     # In[67]:
