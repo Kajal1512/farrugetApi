@@ -1,3 +1,4 @@
+import sys
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -2084,7 +2085,9 @@ def AutomationOfML():
             # MLIframe = MLModel(i[2])
             MLIframe = ""
             try:
-                MLIframe = MLModel(i[2])
+#                 MLIframe = MLModel(i[2])
+                with sys.setrecursionlimit(5000):
+                    MLIframe = MLModel(i[2])
                 # print("Ml iframes for mobile and web :",MLIframeList)
                 # MLIframe=MLIframeList[0]
                 print(" MLIframe is : ", MLIframe)
