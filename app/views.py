@@ -1761,9 +1761,9 @@ def MLModel(countyName):
     y_higher = []
     print(final.index, "Line number 1760")
     count = 0
-    for i in range(len(final.index)):
-        print("Anshuman in for Loo p ", i, "  value is ", final.index[i], " line 1761")
-        j = final['Prediction'][final.index[i]]
+    for i in final.index:
+        print("Anshuman in for Loop ", i, "  value is  line 1761")
+        j = final['Prediction'][i]
         y_lower.append(j - j * (10 / 100))
         y_higher.append(j + j * (10 / 100))
         count += 1
