@@ -1767,8 +1767,8 @@ def MLModel(countyName):
         y_lower.append(j - j * (10 / 100))
         y_higher.append(j + j * (10 / 100))
         count += 1
-        if count == final["index"].count():
-            break
+       # if count == final["index"].count():
+           # break
     print(" line 1765  ")
     final['forecast_lower'] = y_lower
     final['forecast_upper'] = y_higher
