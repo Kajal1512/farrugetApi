@@ -1786,8 +1786,8 @@ def autoMl(countyName):
     final['SALE_PRICE'] = final['SALE_PRICE'].astype(str)
     final['forecast_lower'] = final['forecast_lower'].fillna(0).astype(np.int64, errors='ignore')
     final['forecast_upper'] = final['forecast_upper'].fillna(0).astype(np.int64, errors='ignore')
-    final['forecast_upper'] = final['forecast_upper'].replace(0, None)
-    final['forecast_lower'] = final['forecast_lower'].replace(0, None)
+#     final['forecast_upper'] = final['forecast_upper'].replace(0, None)
+#     final['forecast_lower'] = final['forecast_lower'].replace(0, None)
     final = final.to_dict(orient='records')
 
     # !/usr/bin/env python
