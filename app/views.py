@@ -2059,7 +2059,7 @@ def AutomationOfBI():
     record = cursor.fetchall()
     print(len(record))
     for i in record:
-        if (datetime.datetime.utcnow()) - timedelta(minutes=10) > i[4]:
+        if (datetime.datetime.utcnow()) - timedelta(minutes=30) > i[4]:
             details = PowerBiAutoMationAPI(i[2])
             print("Automated BI sucessfully Completed : ")
             UpdateValueInDBForBI(i[0], details)
