@@ -2079,7 +2079,7 @@ def AutomationOfML():
     conn.commit()
     conn.close()
     for i in record:
-        if (datetime.datetime.utcnow()) - timedelta(minutes=10) > i[4]:
+        if (datetime.datetime.utcnow()) - timedelta(minutes=30) > i[4]:
             try:
                 details = MLModel(i[2])
                 UpdateValueInDBForML(i[0], details)
