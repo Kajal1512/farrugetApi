@@ -103,7 +103,7 @@ class LoginAPI(APIView):
             accessTokenBI = generationAccesstoken(datasetId=record2[4], reportId=record2[3], groupId=record2[2])
             accessTokenML = generationAccesstoken(datasetId=record2[9], reportId=record2[12], groupId=record2[7])
             accessTokenMobileML = generationAccesstoken(datasetId=record2[9], reportId=record2[8], groupId=record2[7])
-            accessTokenMobileBI = generationAccesstoken(datasetId=record2[9], reportId=record2[14], groupId=record2[2])
+            accessTokenMobileBI = generationAccesstoken(datasetId=record2[4], reportId=record2[14], groupId=record2[2])
             print(len(record2))
             print(record2)
             MLToken = None
