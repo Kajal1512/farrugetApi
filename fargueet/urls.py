@@ -24,5 +24,6 @@ urlpatterns = [
     path('getAllCounty/',AllCounty.as_view(),name="AllCounty"),
     path('CreationOfBIAndML/',CreationOfBIAndML.as_view(),name="CreationOfBIAndML"),
     path('CreationOfML/',CreationOfML.as_view(),name="CreationOfMLModel"),
+    path('AccessTokenForMLAndBI/',AccessTokenForMLAndBI.as_view(),name="AccessTokenForMLAndBI"),
 
 ]
