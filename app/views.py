@@ -2143,7 +2143,7 @@ def GenerateTokens(uniqueId,choice):
         return v
     if(choice.lower()=='bi'):
         datasetIdMobile = record2[4]
-        if record2[0] == 'rutherford':
+        if record2[0] == '638FOC1YHDCQ7OB':
             datasetIdMobile = "4ccb0f2c-1dde-4c43-8df6-5045b1ac65fa"
         print("Dataset Id is ", datasetIdMobile)
         accessTokenBI = generationAccesstoken(datasetId=record2[4], reportId=record2[3], groupId=record2[2])
